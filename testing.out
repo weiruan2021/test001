@@ -1,0 +1,25 @@
+test_mainlogin (__main__.helpo) ... ERROR
+
+======================================================================
+ERROR: test_mainlogin (__main__.helpo)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/xiao.dong/Documents/python_test/Android test/test001/test_helpo_main.py", line 35, in test_mainlogin
+    el2 = self.driver.find_element(by=By.XPATH, value= '(//android.view.View[@content-desc="こちら"])[1]]')
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/appium/webdriver/webdriver.py", line 279, in find_element
+    return self.execute(RemoteCommand.FIND_ELEMENT, {
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/appium/webdriver/errorhandler.py", line 31, in check_response
+    raise wde
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/appium/webdriver/errorhandler.py", line 26, in check_response
+    super().check_response(response)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSessionIdException: Message: A session is either terminated or not started
+
+
+----------------------------------------------------------------------
+Ran 1 test in 113.790s
+
+FAILED (errors=1)
