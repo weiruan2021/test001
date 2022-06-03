@@ -1,5 +1,6 @@
 pipeline {
     agent myMac
+
     options {
         skipStagesAfterUnstable()
     }
@@ -20,5 +21,5 @@ pipeline {
             }
         }
   
-
-echo "Jenkinsfile, hi."
+    }
+}
