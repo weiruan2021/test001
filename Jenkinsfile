@@ -1,13 +1,24 @@
-
 pipeline {
-    agent { docker { image 'python:3.10.1-alpine' } }
+    agent myMac
+    options {
+        skipStagesAfterUnstable()
+    }
     stages {
-        stage('build') {
+        stage('Build') {
             steps {
-                sh 'python --version'
+                echo 'Building'
             }
         }
-    }
-}
+        stage('Test') {
+            steps {
+                echo 'Testing'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                echo 'Deploying'
+            }
+        }
+  
 
 echo "Jenkinsfile, hi."
