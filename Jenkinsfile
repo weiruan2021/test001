@@ -1,5 +1,5 @@
 pipeline {
-    agent myMac
+    agent any
 
     options {
         skipStagesAfterUnstable()
