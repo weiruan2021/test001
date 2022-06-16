@@ -1,7 +1,5 @@
 pipeline {
-  agent {
-    label 'myMac'
-  }
+  agent any
   stages {
     stage('Build') {
       steps {
