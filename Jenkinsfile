@@ -4,8 +4,8 @@ pipeline {
     stage('Build') {
       steps {
         echo 'Building'
-         sh 'emulator @sdk_gphone64_x86_64
-         sh 'appium &'
+        sh 'emulator @sdk_gphone64_x86_64'
+        sh 'appium &'
         
       }
     }
