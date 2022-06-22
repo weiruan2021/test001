@@ -4,11 +4,7 @@ pipeline {
     stage('Build') {
       steps {
         echo 'Building1'
-       
-        sh 'cd /usr/local/bin'
-        sh 'ls -l'
-        echo 'Building2'
-        sh 'appium &'
+        sh '/usr/local/bin/appium &'
         
       }
     }
