@@ -10,7 +10,7 @@ pipeline {
           pwd
           hostname
           cd /usr/local/bin
-          appium &'
+          appium &
         """   
       }
     }
