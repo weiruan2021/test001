@@ -6,9 +6,12 @@ pipeline {
     stage('Build') {
       steps {
         echo 'Building1'
-        sh 'ls /usr/local/bin -al'
-        sh '/usr/local/bin/appium &'
-        
+        sh """
+          pwd
+          hostname
+          cd /usr/local/bin
+          appium &'
+        """   
       }
     }
 
