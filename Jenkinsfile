@@ -9,8 +9,6 @@ pipeline {
         sh """
           pwd
           hostname
-          cd /usr/local/bin
-          ls -al
           appium
         """   
       }
