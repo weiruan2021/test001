@@ -6,11 +6,12 @@ pipeline {
     stage('Build') {
       steps {
         echo 'Building1'
+        echo $JAVA_HOME
+        echo $ANDROID_HOME
+        echo $PATH
+         whereis appium
         sh """
-          echo $JAVA_HOME
-          echo $ANDROID_HOME
-          echo $PATH
-          whereis appium
+          
         """   
       }
     }
