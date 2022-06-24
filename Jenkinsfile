@@ -11,6 +11,7 @@ pipeline {
           sh 'echo $PATH'
           sh 'export PATH=/usr/local/Cellar/maven/3.8.5/bin:$PATH'
           sh 'echo $PATH'
+          appium &
         }
         echo 'Building1'
         
