@@ -9,7 +9,7 @@ pipeline {
         sh """
           pwd
           hostname
-          appium
+          whereis appium
         """   
       }
     }
