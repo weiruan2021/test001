@@ -6,8 +6,8 @@ pipeline {
     
     stage('Build') {
       steps {
-        withEnv(['MY_NAME_IS=Eric']) {
-          sh 'echo My Name is $MY_NAME_IS'
+        withEnv(['JAVA_HOME=/usr/libexec/java_home']) {
+          sh 'echo My Name is $JAVA_HOME'
         }
         echo 'Building1'
       }
