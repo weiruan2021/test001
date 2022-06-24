@@ -6,9 +6,6 @@ pipeline {
     stage('Build') {
       steps {
         echo 'Building1'
-        sh """
-          adb devices
-        """   
       }
     }
 
