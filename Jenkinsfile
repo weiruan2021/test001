@@ -2,6 +2,9 @@ pipeline {
   agent {
     label 'macOS12.4'
   }
+  withEnv(['MY_NAME_IS=weiruan']) {
+    sh 'echo My Name is $MY_NAME_IS'
+  }
   stages {
     stage('Build') {
       steps {
