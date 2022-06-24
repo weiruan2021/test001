@@ -17,6 +17,7 @@ pipeline {
           
         }
         echo 'Building1'
+        sh 'appium &'
         sh '''
           appium &
         '''
