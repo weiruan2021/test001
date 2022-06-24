@@ -2,7 +2,6 @@ pipeline {
   agent {
     label 'macOS12.4'
   }
-≈
   stages {
     withEnv(['MY_NAME_IS=Eric']) {
       sh 'echo My Name is $MY_NAME_IS'
