@@ -2,6 +2,9 @@ pipeline {
   agent {
     label 'macOS12.4'
   }
+  environment {
+    DISABLE_AUTH = 'true'
+  }
   stages {
     
     stage('Build') {
