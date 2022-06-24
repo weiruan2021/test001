@@ -8,8 +8,10 @@ pipeline {
       steps {
         withEnv(['JAVA_HOME=/usr/libexec/java_home']) {
           sh 'echo My Name is $JAVA_HOME'
+          sh 'echo $PATH'
         }
         echo 'Building1'
+        
       }
     }
 
