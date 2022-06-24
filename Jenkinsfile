@@ -7,8 +7,9 @@ pipeline {
       steps {
         echo 'Building1'
         sh """
-          pwd
-          hostname
+          echo $JAVA_HOME
+          echo $ANDROID_HOME
+          echo $PATH
           whereis appium
         """   
       }
