@@ -10,8 +10,8 @@ pipeline {
     stage('Build') {
       steps {
         echo 'Building1'
-        sh 'appium &'
-        sh '''
+        'appium &'
+        '''
           appium &
         '''
       }
